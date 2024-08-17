@@ -66,3 +66,32 @@ console.log(typeof outsideTemp); // object
 //  function  : function object
 //  Arrays    : object
 
+
+//  ****************** MEMORY *********************
+
+//  STACK (Primitive)    : We get a copy of the variable declared
+//  HEAP (Non-Primitive) : We get a reference to the original variable
+
+let myEmailId   = "ritikaxg@gmail.com"
+let anotherName = myEmailId
+
+anotherName = "ritikaxg"
+
+console.log(myEmailId);
+console.log(anotherName);
+
+let userOne = {
+    email : "ritikaxg@gmail.com",
+    upi   : "ritika@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "ritika@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
+
